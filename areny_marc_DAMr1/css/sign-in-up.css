@@ -1,0 +1,119 @@
+/*----- LOGIN ----- */
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../imagenes/abstract.jpg);
+}
+/*----- REGISTRO ----- */
+.registro{
+    width: 400px;
+    background-color: rgb(26, 25, 25);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px black;
+    opacity: 1;
+    transition: all 500ms;
+    display: block;
+}
+/*----- LOGIN ----- */
+.bloquesSign{
+    transition: all 500ms;
+}
+.login{
+    width: 400px;
+    background-color: rgb(26, 25, 25);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px black;
+    opacity: 0;
+    transition: all 500ms;
+    display: none;
+}
+/* ----- Estilos ----- */
+h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.control{
+    width: 100%;
+    background: rgb(160, 143, 102);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid goldenrod;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+::placeholder { color: white; }
+p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+label{
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+}
+a{
+    color: white;
+    text-decoration: none; 
+}
+a:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+.cambio{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cambio:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+.boton{
+    width: 100%;
+    background: goldenrod;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0px;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="radio"]{
+    display: none;
+}
+
+
+[value="YaTengoCuenta"]:checked ~ .bloquesSign .login:not([data-type~="registro"]){
+    display: block;
+    opacity: 1;
+}
+[value="YaTengoCuenta"]:checked ~ .bloquesSign .registro:not([data-type~="login"]){
+    display: none;
+    opacity: 0;
+}
+[value="NoTengoCuenta"]:checked ~ .bloquesSign .registro:not([data-type~="login"]){
+    display: block;
+    opacity: 1;
+}
+[value="NoTengoCuenta"]:checked ~ .bloquesSign .login:not([data-type~="registro"]){
+    display: none;
+    opacity: 0;
+}

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Staatliches&display=swap');
+
+/* Cabezal y barra menu */
+body{
+    background-color: white;
+    background-image: url(../imagenes/abstract2.jpg);
+    background-size: cover;
+}
+header{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    background-color: black;
+    /* background: linear-gradient(to bottom, black 70%, white); */
+    display: flex;
+    justify-content: space-between;
+}
+.block{
+    width: 5%;
+}
+.titulo{
+    display:flex;
+    justify-content:center;
+    color: rgb(205, 164, 52);
+    /* padding-bottom: 20px; */
+    width: 94%;
+}
+.gos{
+    width: 30px;
+    height: 40px;
+    margin-top: 10px;
+}
+/* MENU HOUSE */
+.iconoMenu{
+    position: relative;
+    max-width: 30px;
+    height: 1%;
+    top: 20px;
+    left: -10px;
+}
+.gh{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.iconoMenu:hover a{
+    display: block;
+}
+.iconoMenu:hover > ul{
+    position: absolute;
+    border:#434343 solid 0.5px;
+    border-radius: 3%;
+    background-color: #F1E5AC;
+    padding: 10px;
+    width: 60px;
+    height: 15px;
+    opacity: 0.9;
+    display: block;
+    transform: translate(-43px, -50%);
+}
+.iconoMenu a{
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+.iconoMenu a:hover{
+    display: block;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* MENU */
+.barMenu{
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+.menu{
+    width: 73.5%;
+    background-color: rgba(255,255,255,1);
+    background-size: contain;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin-left: 12.5%;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 2%;
+    border: 1px solid rgb(170, 170, 170)
+}
+li{
+    list-style: none;
+}
+.boton{
+    text-decoration: none;
+    color: black;
+    transition: all 170ms;
+    padding: 4px;
+}
+.boton:hover{
+    padding: 4px;
+    background-color: goldenrod;
+    color: white;
+    text-decoration: none;
+    border-radius: 10%;
+}
+hr{
+    width: 75%;
+    margin-left: 12.5%;
+    height: 2px;
+    background-color: goldenrod;
+}
+/* FOOTER */
+footer{
+    width: 100%;
+    margin-top: 70px;
+    clear: both;
+    background-color: black;
+}
+.menuF > ul{
+    display: flex;
+    justify-content:space-around;
+}
+.socnet{
+    color:goldenrod;
+    text-decoration: none;
+}
+.socnet:hover{
+    color: white;
+}
+
+.subtitulo{ /* Títulos de cada apartado */
+    display: flex;
+    justify-content: center;
+    font-family: 'Abril Fatface', cursive;
+    color: black;
+}
+
+/* FICHA DE CADA RECETA --> Usado en Index.html y en Listado.html */
+.bloqueReceta{
+    background-color: rgba(252, 240, 192, 0.808);
+    padding: 10px;
+    width: 250px;
+    border-radius: 2%;
+    transition: all 500ms;
+}
+.foto{
+    width: 100%;
+    height: 250px;
+    transition: all 500ms;
+    border-radius: 2%;
+}
+.nombreReceta{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.nombreReceta:hover{
+    text-decoration: underline;
+}
+.bloqueReceta:hover{ /* Función: Agrandar cada FICHA */
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+}
+/* ESTA ES OTRA MANERA DE HACER QUE AUGMENTE LA FICHA 
+   pero el uso de transform: scale() me gusta más ya que no desplaza los demás objetos 
+.bloqueReceta:hover > .foto{
+    width: 270px;
+    height: 255px;
+    border-radius: 5%;
+}
+.bloqueReceta:hover{
+    padding-bottom: 0px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+} */

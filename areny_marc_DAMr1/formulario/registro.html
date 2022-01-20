@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="../imagenes/pezDorado.png">
+    <link rel="stylesheet" href="../css/sign-in-up.css">
+    <title>Registro</title>
+</head>
+<body>
+    <input type="radio" name="sign" id="irlogin" value="YaTengoCuenta">
+    <input type="radio" name="sign" id="irregistro" value="NoTengoCuenta">
+    
+    <div class="bloquesSign">
+        <section class="registro" data-type="registro">
+            <h4>Regístrate</h4>
+            <form method="get" action="../index.html">
+                <input class="control" type="text" name="nombre" id="usrname" placeholder="Ingrese su nombre" required>
+                <input class="control" type="text" name="apellido" id="usrlastname" placeholder="Ingrese su apellido" required>
+                <input class="control" type="email" name="correo" id="usremail" placeholder="Ingrese su correo" required>
+                <input class="control" type="password" name="correo" id="usremail" placeholder="Ingrese su contraseña" required>
+                <input type="checkbox" id="TyC" value="terminos_y_condiciones" required>
+                <label for="TyC">Estoy de acuerdo con <a href="#">Términos y condiciones</a></label>
+                <input class="boton" type="submit" value=Registrar>
+                <label for="irlogin" class="cambio"><p>¿Ya tengo cuenta?</p></label>
+            </form>
+        </section>
+        <section class="login" data-type="login">
+            <h4>Logéate</h4>
+            <form method="get" action="../index.html">
+                <input class="control" type="email" name="correo" id="usremail" placeholder="Ingrese su correo" required>
+                <input class="control" type="password" name="correo" id="usremail" placeholder="Ingrese su contraseña" required>
+                <input class="boton" type="submit" value=Acceder>
+                <label for="irregistro" class="cambio"><p>¿No tengo cuenta? Regístrarme</p></label>
+            </form>
+        </section>
+    </div>
+    
+</body>
+</html>

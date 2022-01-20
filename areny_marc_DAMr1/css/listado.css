@@ -1,0 +1,146 @@
+/*-------------------- CSS DEL LISTADO-----------------------------*/
+/* MENU LATERAL DEL SISTEMA DE FILTRADO */
+.menuLateral{
+    margin-left: 20px;
+    background-color: #F1E5AC;/*rgb(255, 227, 227)*/
+    color: black;
+    float:left;
+    padding: 5px;
+    border-radius: 3%;
+    margin-bottom: 10px;
+    border: 0.5px solid #434343;
+}
+.menuLateral *{
+    padding: 0px;
+}
+.menuLateral ul li a{
+    background-color: #F1E5AC;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+}
+.menuLateral ul li a:hover{
+    background-color: #434343;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    cursor: pointer;
+}
+.menuLateral li{
+    position: relative;
+}
+.menuLateral li ul{
+    z-index: 2;
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    left: 100%;
+    top: 0px;
+    border-color: #434343;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 3%;
+}
+.menuLateral > ul li:hover > ul{
+    display: block;
+}
+input[type="radio"]{
+    display: none;
+}
+.menuLateral li ul li label{
+    background-color: #F1E5AC;
+    padding: 10px 10px;
+    display: block;
+    border-radius: 3%;
+    opacity: 0.9;
+}
+.menuLateral li ul li:hover label:hover{
+    background-color: #434343;
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+}
+/* PANTALLA DONDE SE MOSTRARÁN LOS ELEMENTOS FILTRADOS */
+.pantallaListado{
+    margin-left: 20px;
+    border-radius: 1%;
+    background-color: rgb(240, 228, 205);
+    width: 64%;
+    height: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0.5px solid goldenrod;
+}
+.foroRecetas2 ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.foroRecetas2 .bloqueReceta{
+    margin:5px;
+    margin-right: 20px;
+    margin-left: -20px;
+    width: 100%;
+    display: flex;
+}
+.bloqueReceta div{
+    margin: 5px;
+}
+.bloqueReceta .nombreReceta{
+    margin: 5px;
+    height: fit-content;
+}
+.bloqueReceta .foto{
+    max-width: 37%;
+    height: 90%;
+}
+
+/* SISTEMA DE FILTRADO POR NOMBRE*/
+[value="MODICA"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-name~="MODICA"]){
+    display: none;
+}
+[value="CARBO"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-name~="CARBO"]){
+    display: none;
+}
+[value="JALA"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-name~="JALA"]){
+    display: none;
+}
+[value="BEREN"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-name~="BEREN"]){
+    display: none;
+}
+[value="CUBANA"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-name~="CUBANA"]){
+    display: none;
+}
+/* SISTEMA DE FILTRADO POR DIFICULTAD*/
+[value="FACIL"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-dificulty~="FACIL"]){
+    display: none;
+}
+[value="MEDIO"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-dificulty~="MEDIO"]){
+    display: none;
+}
+[value="DIFICIL"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-dificulty~="DIFICIL"]){
+    display: none;
+}
+/* SISTEMA DE FILTRADO POR TIEMPO*/
+[value="RAPIDO"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-time~="RAPIDO"]){
+    display: none;
+}
+[value="NORMAL"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-time~="NORMAL"]){
+    display: none;
+}
+[value="LENTO"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-time~="LENTO"]){
+    display: none;
+}
+/* SISTEMA DE FILTRADO POR TIPO*/
+[value="ENTRANTE"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-type~="ENTRANTE"]){
+    display: none;
+}
+[value="UNICO"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-type~="UNICO"]){
+    display: none;
+}
+[value="COMBINADO"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-type~="COMBINADO"]){
+    display: none;
+}
+[value="POSTRE"]:checked ~ .pantallaListado .foroRecetas2 ul li:not([data-type~="POSTRE"]){
+    display: none;
+}

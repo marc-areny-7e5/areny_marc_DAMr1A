@@ -1,0 +1,70 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+section > div{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 3%;
+    border: 1px solid rgb(170, 170, 170)
+}
+p{
+    font-size: 20px;
+}
+.fotoPreparacion{
+    max-width: 180px;
+    max-height: 180px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 3%;
+}
+.preparacion p{
+    margin-top: 0px;
+    line-height: 21px;
+}
+
+.cocinando{
+    clear:both;
+}
+.fotoCocina{
+    clear:both;
+    max-width: 180px;
+    max-height: 180px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 3%;
+}
+.cocinando p{
+    margin-top: 0px;
+    line-height: 21px;
+}
+
+.alFuego{
+    clear:both;
+}
+.alFuego p{
+    margin-top: 0px;
+    line-height: 21px;
+}
+
+.horno{
+    clear:both;
+}
+.fotoHorno{
+    clear:both;
+    max-width: 180px;
+    max-height: 180px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 3%;
+}
+.alFuego p{
+    margin-top: 0px;
+    line-height: 21px;
+}

@@ -1,0 +1,172 @@
+/*-------------------- CSS DEL CONTACTO-----------------------------*/
+.divficha{
+    display: flex;
+    justify-content: center;
+}
+.fichaContacto{
+    background-color: rgb(240, 228, 205);
+    padding: 10px;
+    margin: auto;
+    width: 75%;
+    border-radius: 1%;
+    display:inline-block;
+    border: 1px solid goldenrod;
+}
+.fotoPerfil{
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+    width: 20%;
+    height: 100%;
+    border-radius: 3%;
+    float: left;
+}
+.fotoPerfil > p{
+    margin: 5px;
+    padding: 2px;
+    position: absolute;
+    transform: translate(5%, 210%);
+    font-size:1vmax;
+    color: rgb(42, 41, 41);
+    font-weight: bold;
+    transition: all 500ms;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    border-radius: 2%;
+    width: 80%;
+}
+.fotoMe{
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    border-radius: 3%;
+    float:left;
+}
+.background-hover{
+    width: 100px;
+    height: 100px;
+    background: rgb(199, 65, 65);
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    border-radius: 100%;
+    transition: all 500ms;
+    opacity: 0.8;
+}
+.logoGmail{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    transition: all 500ms;
+}
+.fotoPerfil:hover .background-hover{
+    width: 200%;
+    height: 200%;
+    top: -35%;
+    left: -35%;
+}
+.fotoPerfil:hover .logoGmail{
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 30%;
+}
+.fotoPerfil:hover p{
+    opacity: 0;
+}
+.info{
+    display: inline-block;
+    background-color: rgb(231, 231, 231);
+    height: 100%;
+    width: 70%;
+    border-radius: 1%;
+    margin-left: 5%;
+    border: 1px solid rgb(170, 170, 170)
+}
+.info p{
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.subtitulo{ /* Títulos de cada apartado */
+    display: flex;
+    justify-content: center;
+    font-family: 'Abril Fatface', cursive;
+    color: black;
+}
+
+/* FICHAS DE OTRAS REDES SOCIALES */
+.socialBlocks{
+    display: flex;
+    justify-content: space-evenly;
+    margin:10px;
+    margin-left: auto;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+.socialBlocks li a > article{
+    width:10em;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.recuadro{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231, 231, 231);
+    float: left;
+}
+.socialBlocks li a > article p{
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    transition: all 500ms;
+}
+/* seleccionamos las fichas individualmente */
+.Instagram, .Instagram .background-hover{
+    border: 2px solid #F58529;
+    background: #F58529;
+}
+.Facebook, .Facebook .background-hover{
+    border: 2px solid #3b5998;
+    background: #3b5998;
+}
+.Twitter, .Twitter .background-hover{
+    border: 2px solid #00b6f1;
+    background: #00b6f1;
+}
+.Discord, .Discord .background-hover{
+    border: 2px solid #6563ff;
+    background: #6563ff;
+}
+.socialBlocks li a > article .background-hover{
+    top: -35%;
+    left: -35%;
+    border-radius: 100%;
+    transition: all 500ms;
+    opacity: 1;
+}
+.socialBlocks li a > article .logos{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -95%;
+    left: -35%;
+    transition: all 500ms;
+}
+.socialBlocks li a > article:hover .background-hover{
+    width: 300px;
+    height: 300px;
+    top: -100%;
+    left: -50%;
+}
+.socialBlocks li a > article:hover .logos{
+    top: 0%;
+    left: 20%;
+}

@@ -1,0 +1,106 @@
+/*-------------------- CSS DEL INDEX-----------------------------*/
+/* SLIDER */
+.slider{
+    width: 75%;
+    margin:auto;
+    overflow: hidden;
+}
+.slider > ul{
+    padding: 0px;
+    display: flex;
+    width: 300%;
+    animation: desliza 15s infinite alternate;
+    animation-timing-function: ease-in-out;
+}
+.slider li{
+    width: 100%;
+    height: 100%;
+}
+.slider div{
+    transition: all 500ms;
+}
+.slider div:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+    opacity: 0.8;
+}
+.slider a{
+    text-decoration: none;
+}
+.slide1{
+    text-align: center;
+    height: 127px;
+    background-color: goldenrod;
+    color: white;
+    text-decoration: none;
+}
+.slide1:hover{
+    color: black;
+}
+.slide2{
+    height: 127px;
+    background-color: lightsalmon;
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    transition: all 500ms;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+.slide2:hover{
+    color: lightsalmon;
+}
+.fotoMeMini{
+    width: 15%;
+    height: 80%;
+    transform: translate(20px, 10px);
+}
+.slide3{
+    text-align: center;
+    height: 127px;
+    background-color: goldenrod;
+    color: white;
+    text-decoration: none;
+}
+.slide3:hover{
+    color:black;
+}
+@keyframes desliza {
+    0% {margin-left: 0;}
+    30% {margin-left: 0;} /* Final primera slide */
+
+    33% {margin-left: -100%;}
+    66% {margin-left: -100%;} /* Final segunda slide */
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;} /* Final tercera slide */
+}
+.fuego{ /* Gif fuegos */
+    width: 40px;
+    height: 50px;
+    margin-top: 10px;
+}
+.foroRecetas {
+    display: flex;
+    padding: 0px;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.recomendado .bloqueReceta{
+    background-color: rgba(252, 240, 192, 0.808);
+    padding: 10px;
+    width: 175px;
+    height: 220px;
+    border-radius: 2%;
+    transition: all 500ms;
+}
+.recomendado .foto{
+    width: 100%;
+    height: 60%;
+    transition: all 500ms;
+    border-radius: 2%;
+}

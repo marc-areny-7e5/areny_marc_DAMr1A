@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado</title>
+    <link rel="icon" type="image/ico" href="../imagenes/pezDorado.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/listado.css">
+</head>
+<body>
+    <!--CABEZAL-->
+    <header>
+        <div class="block"></div>
+        <div class="titulo">
+            <img class="gos" src="../imagenes/go_left.png" alt="golden olive branch"/>
+            <h1>𝕄𝕒𝕣𝕔 ℝ𝕖𝕔𝕖𝕡𝕚𝕖𝕤</h1>
+            <img class="gos" src="../imagenes/go_right.png" alt="golden olive branch"/>
+        </div>
+        <nav class="iconoMenu">
+            <img class="gh" src="../imagenes/house.png" alt="golden house"/>
+            <ul>
+                <li><a href="../formulario/registro.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="barMenu">
+        <ul class="menu">
+            <li><a class="boton" href="../index.html">Inicio</a></li>
+            <li><a class="boton" href="../listado/listado.html">Recetas</a></li>
+            <li><a class="boton" href="../contacto/contacto.html">Contacto</a></li>
+        </ul>
+        <hr/>
+    </nav>
+    <br>
+
+    <div> <!--ESTE DIV ESTA PORQUE CON EL ES MÁS SENCILLO EL SISTEMA DE FILTRADO-->
+        <!--NOMBRE-->
+        <input type="radio" name="recetas" id="mya" value="MODICA">
+        <input type="radio" name="recetas" id="aalc" value="CUBANA">
+        <input type="radio" name="recetas" id="br" value="BEREN">
+        <input type="radio" name="recetas" id="jr" value="JALA">
+        <input type="radio" name="recetas" id="ealc" value="CARBO">
+        <!--DIFICULTAD-->
+        <input type="radio" name="recetas" id="facil" value="FACIL">
+        <input type="radio" name="recetas" id="medio" value="MEDIO">
+        <input type="radio" name="recetas" id="dificil" value="DIFICIL">
+        <!--TIEMPO-->
+        <input type="radio" name="recetas" id="rapido" value="RAPIDO">
+        <input type="radio" name="recetas" id="normal" value="NORMAL">
+        <input type="radio" name="recetas" id="lento" value="LENTO">
+        <!--TIPO-->
+        <input type="radio" name="recetas" id="entrante" value="ENTRANTE">
+        <input type="radio" name="recetas" id="unico" value="UNICO">
+        <input type="radio" name="recetas" id="combinado" value="COMBINADO">
+        <input type="radio" name="recetas" id="postre" value="POSTRE">
+
+        <div>
+            <nav class="menuLateral">
+                <h4>MENU DE RECETAS</h4>
+                <ul>
+                    <li><a href="">Título</a>
+                        <ul>
+                            <li>
+                                <label for="mya">Módica y arroz</label> 
+                            </li> 
+                            <li> 
+                                <label for="aalc">Arroz a la cubana</label> 
+                            </li> 
+                            <li> 
+                                <label for="br">Berenjenas rellenas</label> 
+                            </li> 
+                            <li>
+                                <label for="jr">Jalapeños rebozados</label>
+                            </li>
+                            <li>
+                                <label for="ealc">Espaguetti a la carbonara</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">Dificultad</a>
+                        <ul>
+                            <li>
+                                <label for="facil">Fácil</label> 
+                            </li> 
+                            <li> 
+                                <label for="medio">Medio</label> 
+                            </li> 
+                            <li> 
+                                <label for="dificil">Difícl</label> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">Tiempo</a>
+                        <ul>
+                            <li>
+                                <label for="rapido">Rápido</label> 
+                            </li> 
+                            <li> 
+                                <label for="normal">Normal</label> 
+                            </li> 
+                            <li> 
+                                <label for="lento">Lento</label> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">Tipo</a>
+                        <ul>
+                            <li>
+                                <label for="entrante">Entrante</label> 
+                            </li> 
+                            <li> 
+                                <label for="unico">Único</label> 
+                            </li> 
+                            <li> 
+                                <label for="combinado">Combinado</label> 
+                            </li>
+                            <li> 
+                                <label for="postre">Postre</label> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="pantallaListado">
+            <nav class="foroRecetas2">
+                <ul>
+                    <li class="bloqueReceta" data-name="CARBO" data-dificulty="MEDIO" data-type="UNICO" data-time="NORMAL">
+                        <img class="foto" src="../imagenes/carbonara.PNG" alt="espaguetti a la carbonara"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Espagetti a la carbonara</a>
+                            <p>Un delicioso plato de espaguettis a la carbonara!</p>
+                            <p>· Medio · 1h · Plato único ·</p>
+                        </div>
+                    </li>
+                    <li class="bloqueReceta" data-name="MODICA" data-dificulty="DIFICIL" data-type="COMBINADO" data-time="LENTO">
+                        <img class="foto" src="../imagenes/modica.PNG" alt="módica con arroz"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Salsa de módica con arroz</a>
+                            <p>Arroz con pollo o pescado y salsa de módica</p>
+                            <p>· Díficil · 2:30h · Plato combiando ·</p>
+                        </div>
+                    </li>
+                    <li class="bloqueReceta" data-name="JALA" data-dificulty="FACIL" data-type="ENTRANTE" data-time="RAPIDO">
+                        <img class="foto" src="../imagenes/jalapeños.PNG" alt="Jalapeños rebozados"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Jalapeños rebozados con queso</a>
+                            <p>Unos crujientes y picantes jalapeños con quesooo!</p>
+                            <p>· Fácil · 30min · Entrante ·</p>
+                        </div>
+                    </li>
+                    <li class="bloqueReceta" data-name="BEREN" data-dificulty="MEDIO" data-type="UNICO" data-time="NORMAL">
+                        <img class="foto" src="../imagenes/berenjenas.png" alt="berenjenas rellenas"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Berenjenas rellenas</a>
+                            <p>Berenjenas rellenas con lo que más te guste (ternera, pollo, verdura,...)</p>
+                            <p>· Medio · 1:20h · Plato único ·</p>
+                        </div>
+                    </li>
+                    <li class="bloqueReceta" data-name="CUBANA" data-dificulty="FACIL" data-type="COMBINADO" data-time="RAPIDO">
+                        <img class="foto" src="../imagenes/arrozCubana.png" alt="arroz a la cubana"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Arroz a la cubana</a>
+                            <p>Arroz con tomate, huevo, platano frito y más!</p>
+                            <p>· Fácil · 35min · Plato combiando ·</p>
+                        </div>
+                    </li>
+                    <li class="bloqueReceta" data-name="FLAN" data-dificulty="FACIL" data-type="POSTRE" data-time="RAPIDO">
+                        <img class="foto" src="../imagenes/flancoco.png" alt="flan de coco"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Flan de coco</a>
+                            <p>Un dulce flan de coco con caramelo y coco polvoreado</p>
+                            <p>· Fácil · 45min · Postre ·</p>
+                        </div>
+                    </li>
+                    <!--DUPLICANDO RECETAS PARA HACER LAS 10 SOLICITADAS-->
+                    <li class="bloqueReceta" data-name="CARBO" data-dificulty="MEDIO" data-type="UNICO" data-time="NORMAL">
+                        <img class="foto" src="../imagenes/carbonara.PNG" alt="espaguetti a la carbonara"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Espagetti a la carbonara</a>
+                            <p>Un delicioso plato de espaguettis a la carbonara!</p>
+                            <p>· Medio · 1h · Plato único ·</p>
+                        </div>
+                    </li>
+                    <li class="bloqueReceta" data-name="MODICA" data-dificulty="DIFICIL" data-type="COMBINADO" data-time="LENTO">
+                        <img class="foto" src="../imagenes/modica.PNG" alt="módica con arroz"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Salsa de módica con arroz</a>
+                            <p>Arroz con pollo o pescado y salsa de módica</p>
+                            <p>· Díficil · 2:30h · Plato combiando ·</p>
+                        </div>
+                    </li>
+                    <li class="bloqueReceta" data-name="JALA" data-dificulty="FACIL" data-type="ENTRANTE" data-time="RAPIDO">
+                        <img class="foto" src="../imagenes/jalapeños.PNG" alt="Jalapeños rebozados"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Jalapeños rebozados con queso</a>
+                            <p>Unos crujientes y picantes jalapeños con quesooo!</p>
+                            <p>· Fácil · 30min · Entrante ·</p>
+                        </div>
+                    </li>
+                    <li class="bloqueReceta" data-name="BEREN" data-dificulty="MEDIO" data-type="UNICO" data-time="NORMAL">
+                        <img class="foto" src="../imagenes/berenjenas.png" alt="berenjenas rellenas"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Berenjenas rellenas</a>
+                            <p>Berenjenas rellenas con lo que más te guste (ternera, pollo, verdura,...)</p>
+                            <p>· Medio · 1:20h · Plato único ·</p>
+                        </div>
+                    </li>
+                    <li class="bloqueReceta" data-name="CUBANA" data-dificulty="FACIL" data-type="COMBINADO" data-time="RAPIDO">
+                        <img class="foto" src="../imagenes/arrozCubana.png" alt="arroz a la cubana"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Arroz a la cubana</a>
+                            <p>Arroz con tomate, huevo, platano frito y más!</p>
+                            <p>· Fácil · 35min · Plato combiando ·</p>
+                        </div>
+                    </li>
+                    <li class="bloqueReceta" data-name="FLAN" data-dificulty="FACIL" data-type="POSTRE" data-time="RAPIDO">
+                        <img class="foto" src="../imagenes/flancoco.png" alt="flan de coco"/>
+                        <div>
+                            <a class="nombreReceta" href="../receta/receta.html">Flan de coco</a>
+                            <p>Un dulce flan de coco con caramelo y coco polvoreado</p>
+                            <p>· Fácil · 45min · Postre ·</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <footer>
+        <nav class="menuF">
+            <ul>
+                <li><a class="socnet">Facebook</a></li>
+                <li><a class="socnet" href="https://www.instagram.com/mnsue13/">Instagram</a></li>
+                <li><a class="socnet" href="mailto:marc.areny.7e5@itb.cat">Email</a></li>
+                <li><a class="socnet" >Twitter</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
